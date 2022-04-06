@@ -4,6 +4,7 @@ class Check:
         self.links = links
         self.number_to_check = number_to_check
         self.init = 0
+
     def number(self):
         i = 0
         found = False
@@ -16,7 +17,6 @@ class Check:
         if not found:
             print("number not found, try manually searching through exceptions: \n")
             self.get_exceptions()
-
 
     def get_exceptions(self):
         for i in range(0, len(self.phone_numbers)):

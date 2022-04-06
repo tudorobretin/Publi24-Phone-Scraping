@@ -6,9 +6,11 @@
 # make another function which takes all links from previous function and access each link
 # check to see if ioana's phone is in there
 # if it is, show the link
-from brain import Get
+from get import Get
+from check import Check
 
 get = Get()
+check = Check()
 
 article_links =[]
 article_links = get.article_links()

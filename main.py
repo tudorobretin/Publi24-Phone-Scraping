@@ -7,19 +7,15 @@
 # check to see if ioana's phone is in there
 # if it is, show the link
 from get import Get
-from check import Check
 
 get = Get()
-check = Check()
 
 article_links =[]
 article_links = get.article_links()
 
 phone_numbers = []
-phone_numbers = get.phone_numbers()
+phone_numbers = get.phone_numbers(article_links=article_links)
 
-match = check.number()
+print(len(phone_numbers))
+print(phone_numbers)
 
-if match:
-    link = check.link()
-    print(link)

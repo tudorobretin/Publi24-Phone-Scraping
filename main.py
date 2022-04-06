@@ -17,8 +17,11 @@ article_links =[]
 article_links = get.article_links()
 
 phone_numbers = []
-phone_numbers = get.phone_numbers()
+phone_numbers = get.phone_numbers(article_links=article_links)
+
 
 check = Check(phone_numbers=phone_numbers, links=article_links, number_to_check=)
 check.number()
+
+
 

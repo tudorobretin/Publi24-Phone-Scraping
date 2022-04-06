@@ -14,4 +14,8 @@ article_links =[]
 article_links = get.article_links()
 
 phone_numbers = []
-phone_numbers = get.phone_numbers()
+phone_numbers = get.phone_numbers(article_links=article_links)
+
+print(len(phone_numbers))
+print(phone_numbers)
+

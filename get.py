@@ -31,7 +31,7 @@ class Get:
         print(number_of_pages)
         links = []
         # number_of_pages - 1
-        for page in range(1, 2):
+        for page in range(1, 10):
             #time.sleep(1)
             print(page)
             article_titles = driver.find_elements(By.CSS_SELECTOR, '.article-title a')

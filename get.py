@@ -31,12 +31,12 @@ class Get:
         print(number_of_pages)
         links = []
         # number_of_pages - 1
-        for page in range(1, 10):
+        for page in range(1, number_of_pages):
             #time.sleep(1)
             print(page)
             article_titles = driver.find_elements(By.CSS_SELECTOR, '.article-title a')
             for title in article_titles:
-                link = title.get_attribute('href')
+                link = title.get_attribute('href').rstrip()
                 links.append(link)
             next_page = driver.find_elements(By.CLASS_NAME, 'arrow')[1]
             next_page.click()

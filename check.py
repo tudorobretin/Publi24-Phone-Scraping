@@ -1,4 +1,4 @@
-class Check:
+ class Check:
     def __init__(self, phone_numbers, links, number_to_check):
         self.phone_numbers = phone_numbers
         self.links = links

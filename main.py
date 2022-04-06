@@ -9,8 +9,9 @@
 from get import Get
 from check import Check
 
+number_to_check = "0737390048"
+
 get = Get()
-check = Check()
 
 article_links =[]
 article_links = get.article_links()
@@ -18,8 +19,6 @@ article_links = get.article_links()
 phone_numbers = []
 phone_numbers = get.phone_numbers()
 
-match = check.number()
+check = Check(phone_numbers=phone_numbers, links=article_links, number_to_check=)
+check.number()
 
-if match:
-    link = check.link()
-    print(link)
